@@ -1,0 +1,29 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true // 这个浏览器环境会导致index.js 中的module 报错
+    // "node": true // 这个会导致index.js 中的window 报错
+    // 全部删除都报错, 这就不合理, 它检测的是parse 之前的带代码, 哎😔.
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "no-console": 0,
+    "react/jsx-uses-vars": [
+      2
+    ],
+    "react/jsx-no-undef": "error"
+  }
+}

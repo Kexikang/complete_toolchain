@@ -1,0 +1,6 @@
+node_modules
+.cache
+dist
+.parcel-cache
+# 这个文件的作用是这些文件不会被版本管理, 并且不会报错, 也就是直接被忽略.
+# 只是再本地使用.
